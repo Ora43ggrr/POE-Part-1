@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Review Claims"; // Sets the page title
+}
+
+<div class="container">
+    <!-- Main container -->
+    <h2 class="text-teal mb-4">Review Claims</h2> <!-- Page heading -->
+
+    <div class="card">
+        <!-- Review claims card -->
+        <div class="card-header">
+            <!-- Card header -->
+            <h5 class="mb-0">Claims for Approval</h5> <!-- Section title -->
+        </div>
+        <div class="card-body">
+            <!-- Card body -->
+            <div class="table-responsive">
+                <!-- Responsive table container -->
+                <table class="table table-hover">
+                    <!-- Claims table -->
+                    <thead>
+                        <!-- Table header -->
+                        <tr>
+                            <!-- Header row -->
+                            <th>Claim ID</th> <!-- ID column -->
+                            <th>Lecturer</th> <!-- Lecturer column -->
+                            <th>Period</th> <!-- Period column -->
+                            <th>Hours</th> <!-- Hours column -->
+                            <th>Amount</th> <!-- Amount column -->
+                            <th>Status</th> <!-- Status column -->
+                            <th>Actions</th> <!-- Actions column -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table body -->
+                        <tr>
+                            <!-- Claim row -->
+                            <td>CLM-2025-009</td> <!-- Claim ID -->
+                            <td>Dr. Sarah Johnson</td> <!-- Lecturer name -->
+                            <td>September 2025</td> <!-- Claim period -->
+                            <td>45</td> <!-- Hours worked -->
+                            <td>R15,750</td> <!-- Claim amount -->
+                            <td><span class="status-badge status-submitted">Submitted</span></td> <!-- Status badge -->
+                            <td>
+                                <!-- Actions cell -->
+                                <a href="#" class="btn btn-sm btn-outline-primary me-1">Review</a> <!-- Review button -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Claim row -->
+                            <td>CLM-2025-008</td> <!-- Claim ID -->
+                            <td>Prof. Michael Brown</td> <!-- Lecturer name -->
+                            <td>August 2025</td> <!-- Claim period -->
+                            <td>40</td> <!-- Hours worked -->
+                            <td>R14,000</td> <!-- Claim amount -->
+                            <td><span class="status-badge status-submitted">Submitted</span></td> <!-- Status badge -->
+                            <td>
+                                <!-- Actions cell -->
+                                <a href="#" class="btn btn-sm btn-outline-primary me-1">Review</a> <!-- Review button -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Claim row -->
+                            <td>CLM-2025-007</td> <!-- Claim ID -->
+                            <td>Dr. Emily Wilson</td> <!-- Lecturer name -->
+                            <td>July 2025</td> <!-- Claim period -->
+                            <td>38</td> <!-- Hours worked -->
+                            <td>R13,300</td> <!-- Claim amount -->
+                            <td><span class="status-badge status-approved">Approved</span></td> <!-- Status badge -->
+                            <td>
+                                <!-- Actions cell -->
+                                <a href="#" class="btn btn-sm btn-outline-success me-1">View</a> <!-- View button -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

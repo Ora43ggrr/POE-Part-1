@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Notifications";
+}
+
+<div class="container">
+    <h2 class="text-teal mb-4">Notifications</h2>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4>Your Notifications</h4>
+                <div>
+                    <button type="button" class="btn btn-outline-primary btn-sm me-2">Mark All as Read</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm">Clear All</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <select class="form-select" id="notificationFilter">
+                    <option value="all">All Notifications</option>
+                    <option value="unread">Unread Only</option>
+                    <option value="claims">Claim Updates</option>
+                    <option value="system">System Messages</option>
+                </select>
+                <button class="btn btn-outline-secondary" type="button">Filter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body p-0">
+            <div class="list-group list-group-flush">
+                <div class="list-group-item list-group-item-action unread-notification">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Claim Approved: August 2025</h5>
+                        <small class="text-muted">2 hours ago</small>
+                    </div>
+                    <p class="mb-1">Your claim for August 2025 has been approved by the Programme Coordinator.</p>
+                    <small class="text-teal">Click to view claim details</small>
+                </div>
+
+                <div class="list-group-item list-group-item-action unread-notification">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Document Request</h5>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                    <p class="mb-1">Please upload supporting documents for your September 2025 claim.</p>
+                    <small class="text-teal">Click to upload documents</small>
+                </div>
+
+                <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">System Maintenance Notice</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Scheduled maintenance this Sunday from 2:00 AM to 6:00 AM.</p>
+                    <small class="text-muted">System announcement</small>
+                </div>
+
+                <div class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Claim Submitted: September 2025</h5>
+                        <small class="text-muted">5 days ago</small>
+                    </div>
+                    <p class="mb-1">Your claim for September 2025 has been successfully submitted.</p>
+                    <small class="text-muted">Claim ID: CLM-2025-009</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Notification pagination" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+    .unread-notification {
+        background-color: rgba(42, 157, 143, 0.05);
+        border-left: 4px solid var(--secondary-teal);
+    }
+</style>

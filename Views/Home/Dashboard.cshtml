@@ -1,0 +1,161 @@
+﻿@{
+    ViewData["Title"] = "Dashboard"; // Sets the page title
+}
+
+<div class="container">
+    <!-- Main container -->
+    <h2 class="text-teal mb-4">Dashboard</h2> <!-- Dashboard heading -->
+
+    <div class="row mb-4">
+        <!-- Metrics row -->
+        <div class="col-md-3 mb-3">
+            <!-- Pending claims metric -->
+            <div class="card dashboard-widget">
+                <!-- Metric card -->
+                <div class="card-body text-center">
+                    <!-- Card body -->
+                    <h5 class="card-title">Pending Claims</h5> <!-- Metric title -->
+                    <h2 class="text-teal">3</h2> <!-- Metric value -->
+                    <p class="card-text">Awaiting review</p> <!-- Metric description -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <!-- Approved claims metric -->
+            <div class="card dashboard-widget">
+                <!-- Metric card -->
+                <div class="card-body text-center">
+                    <!-- Card body -->
+                    <h5 class="card-title">Approved Claims</h5> <!-- Metric title -->
+                    <h2 class="text-teal">12</h2> <!-- Metric value -->
+                    <p class="card-text">This year</p> <!-- Metric description -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <!-- Total amount metric -->
+            <div class="card dashboard-widget">
+                <!-- Metric card -->
+                <div class="card-body text-center">
+                    <!-- Card body -->
+                    <h5 class="card-title">Total Amount</h5> <!-- Metric title -->
+                    <h2 class="text-teal">R42,560</h2> <!-- Metric value -->
+                    <p class="card-text">Year to date</p> <!-- Metric description -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <!-- Documents metric -->
+            <div class="card dashboard-widget">
+                <!-- Metric card -->
+                <div class="card-body text-center">
+                    <!-- Card body -->
+                    <h5 class="card-title">Documents</h5> <!-- Metric title -->
+                    <h2 class="text-teal">27</h2> <!-- Metric value -->
+                    <p class="card-text">Uploaded files</p> <!-- Metric description -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Content row -->
+        <div class="col-md-8 mb-4">
+            <!-- Recent claims section -->
+            <div class="card">
+                <!-- Claims card -->
+                <div class="card-header">
+                    <!-- Card header -->
+                    <h5 class="mb-0">Recent Claims</h5> <!-- Section title -->
+                </div>
+                <div class="card-body">
+                    <!-- Card body -->
+                    <div class="claim-card p-3 mb-3">
+                        <!-- Claim item -->
+                        <div class="d-flex justify-content-between">
+                            <!-- Claim header -->
+                            <h6>September 2025 Claim</h6> <!-- Claim title -->
+                            <span class="status-badge status-submitted">Submitted</span> <!-- Status badge -->
+                        </div>
+                        <p class="mb-1">Hours: 45 | Amount: R15,750</p> <!-- Claim details -->
+                        <small class="text-muted">Submitted: 02 Sep 2025</small> <!-- Submission date -->
+                    </div>
+
+                    <div class="claim-card p-3 mb-3">
+                        <!-- Claim item -->
+                        <div class="d-flex justify-content-between">
+                            <!-- Claim header -->
+                            <h6>August 2025 Claim</h6> <!-- Claim title -->
+                            <span class="status-badge status-approved">Approved</span> <!-- Status badge -->
+                        </div>
+                        <p class="mb-1">Hours: 40 | Amount: R14,000</p> <!-- Claim details -->
+                        <small class="text-muted">Approved: 25 Aug 2025</small> <!-- Approval date -->
+                    </div>
+
+                    <div class="claim-card p-3">
+                        <!-- Claim item -->
+                        <div class="d-flex justify-content-between">
+                            <!-- Claim header -->
+                            <h6>July 2025 Claim</h6> <!-- Claim title -->
+                            <span class="status-badge status-paid">Paid</span> <!-- Status badge -->
+                        </div>
+                        <p class="mb-1">Hours: 38 | Amount: R13,300</p> <!-- Claim details -->
+                        <small class="text-muted">Paid: 15 Aug 2025</small> <!-- Payment date -->
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <!-- View all claims link -->
+                        <a href="#" class="btn btn-outline-primary">View All Claims</a> <!-- View all button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <!-- Sidebar section -->
+            <div class="card">
+                <!-- Quick actions card -->
+                <div class="card-header">
+                    <!-- Card header -->
+                    <h5 class="mb-0">Quick Actions</h5> <!-- Section title -->
+                </div>
+                <div class="card-body">
+                    <!-- Card body -->
+                    <div class="d-grid gap-2">
+                        <!-- Button group -->
+                        <a href="#" class="btn btn-primary">Submit New Claim</a> <!-- Submit claim button -->
+                        <a href="#" class="btn btn-outline-primary">Upload Documents</a> <!-- Upload documents button -->
+                        <a href="#" class="btn btn-outline-primary">Check Status</a> <!-- Check status button -->
+                        <a href="#" class="btn btn-outline-primary">Update Profile</a> <!-- Update profile button -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <!-- Notifications card -->
+                <div class="card-header">
+                    <!-- Card header -->
+                    <h5 class="mb-0">Notifications</h5> <!-- Section title -->
+                </div>
+                <div class="card-body">
+                    <!-- Card body -->
+                    <div class="alert alert-info p-2 mb-2">
+                        <!-- Info notification -->
+                        <small>Your August claim has been approved.</small> <!-- Notification text -->
+                    </div>
+                    <div class="alert alert-warning p-2 mb-2">
+                        <!-- Warning notification -->
+                        <small>Please upload supporting documents for September claim.</small> <!-- Notification text -->
+                    </div>
+                    <div class="alert alert-success p-2">
+                        <!-- Success notification -->
+                        <small>System maintenance scheduled for Sunday.</small> <!-- Notification text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

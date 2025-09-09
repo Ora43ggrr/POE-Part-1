@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Submit Claim"; // Sets the page title
+}
+
+<div class="container">
+    <!-- Main container -->
+    <h2 class="text-teal mb-4">Submit New Claim</h2> <!-- Page heading -->
+
+    <div class="claim-form">
+        <!-- Claim form container -->
+        <form>
+            <!-- Claim form -->
+            <div class="row mb-3">
+                <!-- Month and year row -->
+                <div class="col-md-6">
+                    <!-- Month selection -->
+                    <label for="claimMonth" class="form-label">Claim Month</label> <!-- Month label -->
+                    <select class="form-select" id="claimMonth">
+                        <!-- Month dropdown -->
+                        <option value="">Select Month</option> <!-- Default option -->
+                        <option value="1">January</option> <!-- January option -->
+                        <option value="2">February</option> <!-- February option -->
+                        <option value="3">March</option> <!-- March option -->
+                        <option value="4">April</option> <!-- April option -->
+                        <option value="5">May</option> <!-- May option -->
+                        <option value="6">June</option> <!-- June option -->
+                        <option value="7">July</option> <!-- July option -->
+                        <option value="8">August</option> <!-- August option -->
+                        <option value="9">September</option> <!-- September option -->
+                        <option value="10">October</option> <!-- October option -->
+                        <option value="11">November</option> <!-- November option -->
+                        <option value="12">December</option> <!-- December option -->
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <!-- Year input -->
+                    <label for="claimYear" class="form-label">Claim Year</label> <!-- Year label -->
+                    <input type="number" class="form-control" id="claimYear" value="2025"> <!-- Year input -->
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <!-- Hours worked input -->
+                <label for="hoursWorked" class="form-label">Total Hours Worked</label> <!-- Hours label -->
+                <input type="number" class="form-control" id="hoursWorked"> <!-- Hours input -->
+            </div>
+
+            <div class="mb-3">
+                <!-- Hourly rate input -->
+                <label for="hourlyRate" class="form-label">Hourly Rate (R)</label> <!-- Rate label -->
+                <input type="number" class="form-control" id="hourlyRate"> <!-- Rate input -->
+            </div>
+
+            <div class="mb-3">
+                <!-- Total amount display -->
+                <label for="totalAmount" class="form-label">Total Amount (R)</label> <!-- Total label -->
+                <input type="text" class="form-control" id="totalAmount" value="R 0.00" readonly> <!-- Total input (readonly) -->
+            </div>
+
+            <div class="mb-3">
+                <!-- Description textarea -->
+                <label for="description" class="form-label">Description of Work</label> <!-- Description label -->
+                <textarea class="form-control" id="description" rows="3"></textarea> <!-- Description textarea -->
+            </div>
+
+            <div class="mb-4">
+                <!-- Document upload section -->
+                <label class="form-label">Upload Supporting Documents</label> <!-- Upload label -->
+                <div class="upload-area">
+                    <!-- Upload area -->
+                    <p>Drag & drop files here or click to browse</p> <!-- Upload instructions -->
+                    <small class="text-muted">Maximum file size: 5MB. Supported formats: PDF, JPG, PNG</small> <!-- Upload restrictions -->
+                </div>
+            </div>
+
+            <div class="d-grid gap-2">
+                <!-- Form actions -->
+                <button type="button" class="btn btn-primary">Submit Claim</button> <!-- Submit button -->
+                <a href="#" class="btn btn-outline-secondary">Save as Draft</a> <!-- Save draft button -->
+            </div>
+        </form>
+    </div>
+</div>

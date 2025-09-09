@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Documents"; // Sets the page title
+}
+
+<div class="container">
+    <!-- Main container -->
+    <h2 class="text-teal mb-4">Document Management</h2> <!-- Page heading -->
+
+    <div class="card mb-4">
+        <!-- Upload card -->
+        <div class="card-header">
+            <!-- Card header -->
+            <h5 class="mb-0">Upload New Document</h5> <!-- Section title -->
+        </div>
+        <div class="card-body">
+            <!-- Card body -->
+            <div class="upload-area mb-3">
+                <!-- Upload area -->
+                <p>Drag & drop files here or click to browse</p> <!-- Upload instructions -->
+                <small class="text-muted">Maximum file size: 5MB. Supported formats: PDF, JPG, PNG</small> <!-- Upload restrictions -->
+            </div>
+
+            <div class="mb-3">
+                <!-- Document type selection -->
+                <label for="documentType" class="form-label">Document Type</label> <!-- Type label -->
+                <select class="form-select" id="documentType">
+                    <!-- Type dropdown -->
+                    <option value="">Select document type</option> <!-- Default option -->
+                    <option value="timesheet">Timesheet</option> <!-- Timesheet option -->
+                    <option value="invoice">Invoice</option> <!-- Invoice option -->
+                    <option value="contract">Contract</option> <!-- Contract option -->
+                    <option value="qualification">Qualification</option> <!-- Qualification option -->
+                    <option value="other">Other</option> <!-- Other option -->
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <!-- Document description -->
+                <label for="documentDescription" class="form-label">Description</label> <!-- Description label -->
+                <input type="text" class="form-control" id="documentDescription" placeholder="Brief description of the document"> <!-- Description input -->
+            </div>
+
+            <button type="button" class="btn btn-primary">Upload Document</button> <!-- Upload button -->
+        </div>
+    </div>
+
+    <div class="card">
+        <!-- Documents list card -->
+        <div class="card-header">
+            <!-- Card header -->
+            <h5 class="mb-0">My Documents</h5> <!-- Section title -->
+        </div>
+        <div class="card-body">
+            <!-- Card body -->
+            <div class="table-responsive">
+                <!-- Responsive table container -->
+                <table class="table table-hover">
+                    <!-- Documents table -->
+                    <thead>
+                        <!-- Table header -->
+                        <tr>
+                            <!-- Header row -->
+                            <th>Document Name</th> <!-- Name column -->
+                            <th>Type</th> <!-- Type column -->
+                            <th>Upload Date</th> <!-- Date column -->
+                            <th>Size</th> <!-- Size column -->
+                            <th>Actions</th> <!-- Actions column -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table body -->
+                        <tr>
+                            <!-- Document row -->
+                            <td>September_Timesheet.pdf</td> <!-- Document name -->
+                            <td>Timesheet</td> <!-- Document type -->
+                            <td>02 Sep 2025</td> <!-- Upload date -->
+                            <td>2.4 MB</td> <!-- File size -->
+                            <td>
+                                <!-- Actions cell -->
+                                <a href="#" class="btn btn-sm btn-outline-primary me-1">View</a> <!-- View button -->
+                                <a href="#" class="btn btn-sm btn-outline-danger">Delete</a> <!-- Delete button -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Document row -->
+                            <td>Qualification_Certificate.jpg</td> <!-- Document name -->
+                            <td>Qualification</td> <!-- Document type -->
+                            <td>15 Aug 2025</td> <!-- Upload date -->
+                            <td>1.8 MB</td> <!-- File size -->
+                            <td>
+                                <!-- Actions cell -->
+                                <a href="#" class="btn btn-sm btn-outline-primary me-1">View</a> <!-- View button -->
+                                <a href="#" class="btn btn-sm btn-outline-danger">Delete</a> <!-- Delete button -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- Document row -->
+                            <td>Contract_2025.pdf</td> <!-- Document name -->
+                            <td>Contract</td> <!-- Document type -->
+                            <td>01 Jul 2025</td> <!-- Upload date -->
+                            <td>3.2 MB</td> <!-- File size -->
+                            <td>
+                                <!-- Actions cell -->
+                                <a href="#" class="btn btn-sm btn-outline-primary me-1">View</a> <!-- View button -->
+                                <a href="#" class="btn btn-sm btn-outline-danger">Delete</a> <!-- Delete button -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

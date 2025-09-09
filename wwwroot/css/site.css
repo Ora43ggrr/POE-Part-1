@@ -1,0 +1,195 @@
+:root { /* CSS custom properties for consistent theming */
+    --primary-blue: #1a4b8c; /* Primary blue color variable */
+    --secondary-teal: #2a9d8f; /* Secondary teal color variable */
+    --accent-gold: #e9c46a; /* Accent gold color variable */
+    --light-bg: #f8f9fa; /* Light background color variable */
+    --dark-text: #264653; /* Dark text color variable */
+}
+
+body { /* Body element styling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font stack for better compatibility */
+    background-color: var(--light-bg); /* Uses light background variable */
+    color: var(--dark-text); /* Uses dark text variable */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.bg-teal { /* Custom teal background utility class */
+    background-color: var(--secondary-teal) !important; /* Uses teal color variable with important flag */
+}
+
+.btn-primary { /* Primary button styling */
+    background-color: var(--primary-blue); /* Uses primary blue variable */
+    border-color: var(--primary-blue); /* Border color matches background */
+    padding: 10px 20px; /* Button padding for better touch targets */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+    .btn-primary:hover { /* Primary button hover state */
+        background-color: #0d3a6b; /* Darker blue on hover */
+        border-color: #0d3a6b; /* Darker border on hover */
+    }
+
+.btn-outline-primary { /* Outline button styling */
+    color: var(--primary-blue); /* Text color uses primary blue */
+    border-color: var(--primary-blue); /* Border color uses primary blue */
+    padding: 10px 20px; /* Consistent padding with primary button */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+    .btn-outline-primary:hover { /* Outline button hover state */
+        background-color: var(--primary-blue); /* Fills with primary blue on hover */
+        color: white; /* Text becomes white on hover */
+    }
+
+.text-teal { /* Teal text utility class */
+    color: var(--secondary-teal) !important; /* Uses teal color variable with important flag */
+}
+
+.card { /* Card component styling */
+    border: none; /* Removes default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-header { /* Card header styling */
+    background-color: var(--primary-blue); /* Uses primary blue variable */
+    color: white; /* White text for contrast */
+    border-radius: 10px 10px 0 0 !important; /* Rounded top corners only */
+    padding: 15px 20px; /* Comfortable padding */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+.login-container { /* Login form container */
+    max-width: 400px; /* Maximum width for form */
+    margin: 100px auto; /* Centered with top margin */
+    padding: 30px; /* Inner spacing */
+    background: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.register-container { /* Registration form container */
+    max-width: 500px; /* Slightly wider than login form */
+    margin: 50px auto; /* Centered with less top margin */
+    padding: 30px; /* Inner spacing */
+    background: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dashboard-widget { /* Dashboard metric widget */
+    height: 100%; /* Full height of container */
+}
+
+.status-badge { /* Status indicator badge */
+    padding: 5px 10px; /* Compact padding */
+    border-radius: 20px; /* Pill-shaped corners */
+    font-size: 0.8rem; /* Smaller font size */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.status-submitted { /* Submitted status styling */
+    background-color: #fff3cd; /* Light yellow background */
+    color: #856404; /* Dark yellow text */
+}
+
+.status-approved { /* Approved status styling */
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+}
+
+.status-rejected { /* Rejected status styling */
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+}
+
+.status-paid { /* Paid status styling */
+    background-color: #cce5ff; /* Light blue background */
+    color: #004085; /* Dark blue text */
+}
+
+.claim-card { /* Claim item card */
+    border-left: 4px solid var(--secondary-teal); /* Left border accent */
+}
+
+.form-control { /* Form input styling */
+    padding: 12px 15px; /* Comfortable padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ced4da; /* Light border */
+}
+
+.navbar-brand { /* Navbar brand/logo styling */
+    font-weight: 700; /* Bold font weight */
+    font-size: 1.5rem; /* Larger font size */
+}
+
+.upload-area { /* File upload area styling */
+    border: 2px dashed #ced4da; /* Dashed border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Generous padding */
+    text-align: center; /* Centered content */
+}
+
+.claim-form { /* Claim form container */
+    background: white; /* White background */
+    padding: 30px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.table th { /* Table header styling */
+    background-color: var(--primary-blue); /* Uses primary blue variable */
+    color: white; /* White text for contrast */
+}
+
+.alert-box { /* Alert container */
+    padding: 15px; /* Inner spacing */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.alert-info { /* Info alert styling */
+    background-color: #d1ecf1; /* Light blue background */
+    border-left: 4px solid #0c5460; /* Left border accent */
+}
+
+.alert-warning { /* Warning alert styling */
+    background-color: #fff3cd; /* Light yellow background */
+    border-left: 4px solid #856404; /* Left border accent */
+}
+
+.alert-success { /* Success alert styling */
+    background-color: #d4edda; /* Light green background */
+    border-left: 4px solid #155724; /* Left border accent */
+}
+
+.privacy-content h3 { /* Privacy policy section headings */
+    border-bottom: 2px solid var(--secondary-teal); /* Bottom border with teal color */
+    padding-bottom: 0.5rem; /* Padding below text */
+    margin-bottom: 1rem; /* Margin below heading */
+}
+
+.privacy-content ul { /* Privacy policy lists */
+    padding-left: 1.5rem; /* Indentation for lists */
+}
+
+.privacy-content li { /* Privacy policy list items */
+    margin-bottom: 0.5rem; /* Spacing between list items */
+}
+
+.privacy-content strong { /* Privacy policy strong text */
+    color: var(--primary-blue); /* Uses primary blue color */
+}
+
+@media (max-width: 768px) { /* Responsive styles for mobile devices */
+    .login-container, .register-container { /* Form containers on mobile */
+        margin: 30px auto; /* Reduced margin */
+        padding: 20px; /* Reduced padding */
+    }
+
+    .dashboard-widget { /* Dashboard widgets on mobile */
+        margin-bottom: 15px; /* Bottom margin between stacked widgets */
+    }
+}
